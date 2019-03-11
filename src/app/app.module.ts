@@ -15,13 +15,19 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 // Importar rutas
 import { ROUTES } from './app.routes';
 
+// Pipes
+import { ObtenerCancionesPipe } from './pipes/obtener-canciones.pipe';
+import { NoImagePipe } from './pipes/no-image.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    ObtenerCancionesPipe,
+    NoImagePipe
   ],
   imports: [
     BrowserModule,
